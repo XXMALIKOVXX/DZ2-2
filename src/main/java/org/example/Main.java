@@ -1,11 +1,11 @@
-import org.example.BmiService;
+package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        BmiService service = new BmiService();
-        int BodyMassa = 98;
-        int Height = (int)1.87;
-                int bmi = service.calculate(BodyMassa,Height);
-        System.out.println("индекс массы="+bmi);
+        int weightInkg = 98;
+        double heightInMeters = 1.87;
+        BmiService service = new BmiService(weightInKg, heightInMeters);
+        double bmi = service.calculate(weightInkg, heightInMeters);
+        System.out.println("индекс массы=" + bmi);
     }
 }
