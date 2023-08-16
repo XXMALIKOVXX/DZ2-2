@@ -2,8 +2,10 @@ package org.example;
 
 public class BmiService {
     public int calculate(double heightInMeters, int weightInKg) {
-        double bmi = weightInkg / heightInMeters / heightInMeters;
+        double bmi = weightInKg / heightInMeters / heightInMeters;
         return (int) bmi;
     }
 
+
 }
+

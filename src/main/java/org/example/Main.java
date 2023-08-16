@@ -2,9 +2,9 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        BmiService service = new BmiService();
         int weightInkg = 98;
-        double heightInMeters = 1.87;
-        BmiService service = new BmiService(weightInKg, heightInMeters);
+        int heightInMeters = (int) 1.87;
         double bmi = service.calculate(weightInkg, heightInMeters);
         System.out.println("индекс массы=" + bmi);
     }
